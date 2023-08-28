@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Overpass&display=swap');
+
+body{
+    font-family: 'Overpass', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color:  hsl(217, 12%, 63%);
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 90%;
+    max-width: 375px;
+    background-color: hsl(216, 12%, 8%);
+    padding: 15px 20px;
+    border-radius: 10px;
+    position: relative;
+ 
+}
+
+div.star{
+    width: 40px;
+    height:40px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.question{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 550;
+    color: hsl(0, 0%, 100%);
+}
+
+p.text{
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+div.numbers{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px auto;
+    
+}
+
+
+
+div.numbers p:hover{
+    background-color:hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+}
+
+div.button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: hsl(25, 97%, 53%);
+    color:hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 550;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+div.numbers p{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%; 
+    padding: 12px;
+
+}
+
+.number-bg{
+    background-color: hsl(213, 19%, 18%);
+}
+
+.clicked-number{
+    
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(217, 12%, 63%);
+}
+
+
+
+/**THANK YOU STYLES**/
+
+section.thank-you{
+    font-family: 'Overpass', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color:  hsl(217, 12%, 63%);
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+div.thank-you{
+
+    width: 90%;
+    max-width: 400px;
+    background-color:hsl(216, 12%, 8%);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+div.thank-you p:first-of-type{
+    color: hsl(25, 75%, 58%);
+    font-size: 16px;
+    padding: 7px 0px;
+    border-radius: 20px;
+    background-color: hsl(213, 19%, 18%);
+    width: 200px;
+    margin: 20px auto 25px;
+    
+}
+
+div.thank-you p.thank-you{
+    font-size: 22px;
+    color: hsl(0,0%, 100%);
+    font-weight: 600;
+    margin: 15px auto;
+}
+
+div.thank-you article{
+    width: 90%;
+    margin: 0px auto;
+    line-height: 1.5;
+}
+
+/**ERROR STYLES**/
+
+section.error{
+    background-color: hsl(216, 12%, 8%);
+    /* background-color: #000; */
+    width: 90%;
+    max-width: 300px;
+    margin:0 auto;
+    padding: 40px;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 600;
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+  
+}
+
+section.error span{
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 50%;
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-right: 10px;
+    height: 40px;
+}
+
+
